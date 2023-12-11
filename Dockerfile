@@ -8,7 +8,7 @@ COPY pom.xml ./
 RUN mvn clean install -DskipTests
 
 
-FROM maven:3.9-eclipse-temurin-17-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 VOLUME /tmp
 EXPOSE 8080
